@@ -159,14 +159,19 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 241337567, guid: 3f547a20f08c89e41a76181963e69c18, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2358331991914373238, guid: 3f547a20f08c89e41a76181963e69c18,
         type: 3}
       propertyPath: weaponDamage
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 241337567, guid: 3f547a20f08c89e41a76181963e69c18, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5496021683175856835, guid: 3f547a20f08c89e41a76181963e69c18,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f547a20f08c89e41a76181963e69c18, type: 3}
