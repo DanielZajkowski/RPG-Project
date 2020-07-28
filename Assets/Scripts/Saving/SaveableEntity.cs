@@ -1,9 +1,9 @@
-using System;
-using System.Collections.Generic;
-using RPG.Core;
-using UnityEditor;
 using UnityEngine;
+using UnityEditor;
 using UnityEngine.AI;
+using RPG.Core;
+using System.Collections.Generic;
+using System;
 
 namespace RPG.Saving
 {
@@ -41,37 +41,44 @@ namespace RPG.Saving
             }
         }
 
+// If project has been packages up, this cose is essentailly removed entirely
 #if UNITY_EDITOR
-        private void Update() {
-            if (Application.IsPlaying(gameObject)) return;
-            if (string.IsNullOrEmpty(gameObject.scene.path)) return;
+        private void Update() 
+        {
+            // Check if we playing and if we are in scene file vs being in a prefab
+            if (Application.IsPlaying(gameObject))  return;
+            if (string.IsNullOrEmpty(gameObject.scene.path))    return;
 
-            SerializedObject serializedObject = new SerializedObject(this);
-            SerializedProperty property = serializedObject.FindProperty("uniqueIdentifier");
-            
-            if (string.IsNullOrEmpty(property.stringValue) || !IsUnique(property.stringValue))
+            // In order to change value that are stored into the scene file or prefab, it's need to use SerializedObject and SerializedProperty
+            SerializedObject serializeObject = new SerializedObject(this);
+            SerializedProperty property = serializeObject.FindProperty("uniqueIdentifier");
+
+            if(string.IsNullOrEmpty(property.stringValue) || !IsUnique(property.stringValue))
             {
                 property.stringValue = System.Guid.NewGuid().ToString();
-                serializedObject.ApplyModifiedProperties();
+                serializeObject.ApplyModifiedProperties();
             }
 
             globalLookup[property.stringValue] = this;
         }
 #endif
-
         private bool IsUnique(string candidate)
         {
-            if (!globalLookup.ContainsKey(candidate)) return true;
+            // Check key exists in the dictionary
+            if(!globalLookup.ContainsKey(candidate))
+                return true;
+            
+            // Not pointing to ourselves
+            if(globalLookup[candidate] == this) 
+                return true;
 
-            if (globalLookup[candidate] == this) return true;
-
-            if (globalLookup[candidate] == null)
+            if(globalLookup[candidate] == null)
             {
                 globalLookup.Remove(candidate);
                 return true;
             }
 
-            if (globalLookup[candidate].GetUniqueIdentifier() != candidate)
+            if(globalLookup[candidate].GetUniqueIdentifier() != candidate)
             {
                 globalLookup.Remove(candidate);
                 return true;
