@@ -26,22 +26,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbf460134e448194f95443bc308ca81c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4926823327276515171
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6981415992172183859}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd5a193bf012bde4aac294d8a54cfba3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startingLevel: 1
-  characterClass: 0
-  progression: {fileID: 0}
-  levelUpParticleEffect: {fileID: 0}
 --- !u!114 &7944175123726935397
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,6 +242,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6225800724543352008, guid: 92a21e98af7f6ca4bbcc719b54d70d76,
         type: 3}
+    - target: {fileID: 5072747712145047270, guid: 3f547a20f08c89e41a76181963e69c18,
+        type: 3}
+      propertyPath: shouldUseModifier
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5864028708768479991, guid: 3f547a20f08c89e41a76181963e69c18,
         type: 3}
       propertyPath: uniqueIdentifier
