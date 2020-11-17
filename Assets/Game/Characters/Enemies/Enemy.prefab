@@ -113,6 +113,80 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1717527317996582558}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2360459311833775826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6913987273955341779}
+    m_Modifications:
+    - target: {fileID: 14310801041650491, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_Name
+      value: Health Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209308329192426687, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209308329192426687, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209308329192426687, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209308329192426687, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209308329192426687, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209308329192426687, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209308329192426687, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209308329192426687, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209308329192426687, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209308329192426687, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1209308329192426687, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517994762903007386, guid: ae94113f45661754faaed030cbdadf2c,
+        type: 3}
+      propertyPath: healthComponent
+      value: 
+      objectReference: {fileID: 4220208274592532812}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ae94113f45661754faaed030cbdadf2c, type: 3}
 --- !u!1001 &2472941220086383211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -180,6 +254,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5895577131527713171, guid: 3f547a20f08c89e41a76181963e69c18,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2358331991914373238, guid: 3f547a20f08c89e41a76181963e69c18,
         type: 3}
       propertyPath: weaponDamage
@@ -232,3 +311,15 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2472941220086383211}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4220208274592532812 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1783592574195010343, guid: 3f547a20f08c89e41a76181963e69c18,
+    type: 3}
+  m_PrefabInstance: {fileID: 2472941220086383211}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 680961253383273140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57f7b7f67864da048bea3e6ad3ac47ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
