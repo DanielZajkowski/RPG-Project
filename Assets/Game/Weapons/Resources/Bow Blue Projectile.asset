@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bow Blue Projectile
   m_EditorClassIdentifier: 
   animatorOverride: {fileID: 22100000, guid: 9bd472c638fa4eb44880b19025c4b761, type: 2}
-  equippedPrefab: {fileID: 928835424612866587, guid: 6678b84b18de4184dae26dea5e8bcbec,
+  equippedPrefab: {fileID: 2045455658988927845, guid: 6678b84b18de4184dae26dea5e8bcbec,
     type: 3}
   weaponDamage: 2
   percentageBonus: 20
