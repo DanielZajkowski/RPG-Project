@@ -257,7 +257,7 @@ PrefabInstance:
     - target: {fileID: 5895577131527713171, guid: 3f547a20f08c89e41a76181963e69c18,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2358331991914373238, guid: 3f547a20f08c89e41a76181963e69c18,
         type: 3}
@@ -293,8 +293,38 @@ PrefabInstance:
       objectReference: {fileID: 1717527317996183410}
     - target: {fileID: 1783592574195010343, guid: 3f547a20f08c89e41a76181963e69c18,
         type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783592574195010343, guid: 3f547a20f08c89e41a76181963e69c18,
+        type: 3}
       propertyPath: healthPoints
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783592574195010343, guid: 3f547a20f08c89e41a76181963e69c18,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783592574195010343, guid: 3f547a20f08c89e41a76181963e69c18,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783592574195010343, guid: 3f547a20f08c89e41a76181963e69c18,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 695045583595441884}
+    - target: {fileID: 1783592574195010343, guid: 3f547a20f08c89e41a76181963e69c18,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Aggrevate
+      objectReference: {fileID: 0}
+    - target: {fileID: 1783592574195010343, guid: 3f547a20f08c89e41a76181963e69c18,
+        type: 3}
+      propertyPath: takeDamage.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5496021683175856835, guid: 3f547a20f08c89e41a76181963e69c18, type: 3}
